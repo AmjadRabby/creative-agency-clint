@@ -28,7 +28,7 @@ const Login = () => {
       console.log(result)
 
       const signInUser = {name: displayName, email, image: photoURL};
-      // userToken()
+      userToken()
       setGoogleSignIn(signInUser);
       history.replace(from);
       
