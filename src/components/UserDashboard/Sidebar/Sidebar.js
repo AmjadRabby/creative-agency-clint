@@ -152,7 +152,7 @@ const Sidebar = () => {
           <div>
             <li>
               <Link to="/admin-service-list" className="text-dark">
-                <FontAwesomeIcon icon={faListAlt} /> <span>Service list</span>
+                <FontAwesomeIcon icon={faListAlt} /> <span>Service List</span>
               </Link>
             </li>
             <li>
