@@ -1,0 +1,31 @@
+/* .img-logo{
+    width: 129px;
+} */
+.service .card:hover {
+    box-shadow: 5px 5px 40px  lightgrey;
+}
+
+.slider-container{
+    height: 700px;
+    background-color: #111430;
+}
+
+.footer-container{
+    display:block;
+    height: 700px;
+    background-color: #FBD062;
+}
+
+@media only screen and (max-width:770px){
+
+    .clint-section{
+        height: 250px!important;
+    }
+    .footer-container{
+        height: 900px;
+    }
+    .message-area{
+        height: 100%;
+    }
+
+}

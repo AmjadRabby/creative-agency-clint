@@ -1,0 +1,24 @@
+/* .left-navbar{
+    height:100%;
+    width:100%;
+   
+    box-shadow:1px 0px 5px rgb(241, 238, 238);
+} */
+
+
+.sidebar{
+    /* background-image: linear-gradient(40deg, #19d3ae,#0fcfec); */
+    /* background-color: lightgrey; */
+    /* color: black!important; */
+    /* position: fixed; */
+}
+.sidebar li{
+    margin-bottom: 2em;
+}
+.sidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px);
+}
+.sidebar svg{
+    margin-right: 5px;
+}

@@ -1,0 +1,19 @@
+.sidebar{
+    background-color:  gray;
+    position: fixed;
+    width: 200px;
+}
+/* .sidebar ul li{
+    margin-bottom: 2em;
+    color: white;
+} */
+/* .sidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px);
+} */
+/* .sidebar svg{
+    margin-right: 5px;
+} */
+.list-item{
+    width: 200px;
+}
