@@ -3,12 +3,11 @@ import {Container, Row, Col} from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import Sidebar from '../../Sidebar/Sidebar';
 import AdminServiceListDetails from '../AdminServiceListDetails/AdminServiceListDetails';
-// import './AdminServiceList.css'
+
 const AdminServiceList = () => {
     const [allOrder, setAllOrder] = useState([])
 
-    console.log(allOrder);
-
+    // console.log(allOrder);
 
     useEffect(() => {
         fetch('https://powerful-castle-90702.herokuapp.com/allOrder')

@@ -15,18 +15,13 @@ const Login = () => {
 
   let history = useHistory();
   let location = useLocation()
-
   let { from } = location.state || { from: { pathname: "/" } };
 
   const SignIn = () => {
     var provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider)
     .then(function(result) {   
-
       const {displayName, email, photoURL} = result.user;
-
-      console.log(result)
-
       const signInUser = {name: displayName, email, image: photoURL};
       userToken()
       setGoogleSignIn(signInUser);
@@ -36,9 +31,7 @@ const Login = () => {
       console.log(error.message); 
     
     });
-
   };
-
 
   const userToken = () => {
     firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function(idToken) {

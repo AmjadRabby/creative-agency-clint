@@ -3,11 +3,11 @@ import { Form } from 'react-bootstrap';
 
 const AdminServiceListDetails = ({service}) => {
 
-    const [pending, setPending]=useState(service.status.toLowerCase()=='pending')
+    // const [pending, setPending]=useState(service.status.toLowerCfire
 
-    const statusHandler=(e)=>{
+    // const statusHandler=(e)=>{
 
-    }
+    // }
     return (
         
         <tr style={{ fontWeight:'400',}}>
@@ -17,7 +17,7 @@ const AdminServiceListDetails = ({service}) => {
             <td>{service.description}</td>
             <td style={{color:'#FF4545'}}>{service.status}</td>
             <td>
-            {
+            {/* {
                 pending &&
                  <Form.Control as="select" className='text-danger' onChange={statusHandler}>
                     <option  selected style={{color:'#FF4545'}}>Pending</option>
@@ -31,7 +31,7 @@ const AdminServiceListDetails = ({service}) => {
                     <option selected style={{color:'#009444'}}>Done</option>
                 </Form.Control>
             }
-        
+         */}
 
             </td>
             

@@ -1,7 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Col, Form, Row, Button } from "react-bootstrap";
 import { UserContext } from "../../../App";
-import upload from "../../../images/logos/upload.png";
 import "./Order.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudUploadAlt } from "@fortawesome/free-solid-svg-icons";
@@ -20,7 +18,6 @@ const Order = ({ id }) => {
   const [orderFile, setOrderFile] = useState(null);
 
   const matchService = servicesCard.find((service) => service._id === id);
-
   // console.log(matchService)
 
   const handleBlur = (e) => {
@@ -29,15 +26,12 @@ const Order = ({ id }) => {
     setOrder(newOrder);
   };
 
-  // const orderFileChange = e => {
-  //     const newFile = e.target.files[0];
-  //     setOrderFile(newFile);
-  // }
+  const orderFileChange = e => {
+      const newFile = e.target.files[0];
+      setOrderFile(newFile);
+  }
 
-  // {
-  //     matchService ? matchService : order
-  // }
-
+  
   const handleSubmit = (e) => {
     const newOrder = { ...googleSignIn, ...order, ...matchService };
 
