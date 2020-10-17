@@ -17,7 +17,7 @@ const UserService = () => {
 
     return (
         <div style={{marginTop:'10px', marginBottom:'10px'}}>
-            <h4 className='mt-4 ml-5'>Service List</h4>
+           
         {/* <Container> */}
             <Row xs={12} className='align-items-center' style={{marginTop:'10px'}}>
                 {

@@ -3,8 +3,10 @@ import { Card, Col } from 'react-bootstrap';
 // import './GeneralServiceListDetails.css'
 
 const UserServiceDetails = ({service}) => {
-    return (        
+    return (  
+
             <Col xs={10} md={5} className='text-left'>
+                
             <Card className='general-service-list-details-card mt-5' style={{ width: '90%',margin:'auto', borderRadius:'10px' }}>
                 <Card.Body>
                     <div className='d-flex justify-content-between align-items-center'>

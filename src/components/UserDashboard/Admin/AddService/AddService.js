@@ -4,6 +4,7 @@ import './AddService.css'
 import upload from '../../../../images/logos/upload.png'
 import Sidebar from '../../Sidebar/Sidebar';
 import { UserContext } from '../../../../App';
+import Topbar from '../../DashboardNavbar/Topbar/Topbar';
 
 
 const AddService = () => {
@@ -47,6 +48,7 @@ const AddService = () => {
 
     return (
         <div>
+            <Topbar/>
             <Row xs={12}>
                 <Col md={2}>
                     <Sidebar></Sidebar>

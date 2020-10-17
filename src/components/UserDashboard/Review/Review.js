@@ -37,13 +37,11 @@ const Review = () => {
     return (
         <div> 
             <Topbar/>
-           <Row xs={12}>
-               
+           <Row xs={12}>               
                 <Col md={2}>
                     <Sidebar></Sidebar>
                 </Col>
-                <Col md={10} className=" bg-light">
-                <h4 className='mt-4 ml-5'>Review</h4>
+                <Col md={10} className=" bg-light">              
                     <Container className='m-5 order-form-container'>
                     <Form >
                         <Row xs={12} className='p-5'>

@@ -56,12 +56,14 @@ const Login = () => {
       </Link>
       <div className="login-box">
         <h2>Login with</h2>
-        <div onClick={SignIn} className=" login-btn ">
-          <img className="" src={google} alt="" />
-         <span className="btn-titles"> Continue with Google</span>
-        </div>
+     
+          <div style={{cursor:'pointer'}} onClick={SignIn} className=' login-btn d-flex google-flex'>
+                    <img className='m-1' style={{width:'30px',height:'30px'}} src={google} alt=""/>
+                    <p className='ml-5 m-1'>Continue with Google</p>
+          </div>
         Don't have an account? <a href="#">Create an account</a>
       </div>
+      
     </div>
   );
 };

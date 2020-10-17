@@ -13,9 +13,10 @@ const [feedback, setFeedback] = useState([]);
     return (
         <section className="feedback container pb-5">
             <h4 className='font-weight-bold text-center p-5'>
-            Clients  <span className=''>Feedback</span>
+            Clients  <span className='color-brand'>Feedback</span>
             </h4>
             <div className="card-deck">
+                
                 {
                     feedback.map((feedback => <FeedbackCard key={feedback._id} feedback={feedback}/>))
                 }

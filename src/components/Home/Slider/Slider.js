@@ -33,7 +33,7 @@ const Slider = () => {
             <Container>
                 <div style={{marginBottom:'80px'}}>
                     <h4 style={{color:'white',fontSize:'34px', fontWeight:'600'}} className='text-center'>
-                        Here are some of <span className='brand-text'>our works</span>
+                        Here are some of <span className='color-brand'>our works</span>
                     </h4>
                 </div>
                 

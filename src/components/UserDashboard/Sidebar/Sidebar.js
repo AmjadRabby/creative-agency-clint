@@ -122,7 +122,6 @@ import {
   faShoppingCart,
   faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
-import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
 import { UserContext } from "../../../App";
 
 const Sidebar = () => {
@@ -151,15 +150,16 @@ const Sidebar = () => {
         {googleSignIn.admin ? (
           <div>
             <li>
-              <Link to="/admin-service-list" className="text-dark">
+              <Link to="/dashboard/admin-service-list" className="text-dark">
                 <FontAwesomeIcon icon={faListAlt} /> <span>Service List</span>
               </Link>
             </li>
             <li>
               <Link to="/add-service" className="text-dark">
-                <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>
+                <FontAwesomeIcon icon={faPlus} /> <span>Add Service </span>
               </Link>
             </li>
+           
             <li>
               <Link to="/make-admin" className="text-dark">
                 <FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span>
@@ -169,7 +169,7 @@ const Sidebar = () => {
         ) : (
           <div>
             <li>
-              <Link to="/order" className="text-dark">
+              <Link to="/dashboard/order" className="text-dark">
                 <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
               </Link>
             </li>

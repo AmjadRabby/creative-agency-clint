@@ -9,29 +9,6 @@ const AdminServiceList = () => {
 
     console.log(allOrder);
 
-    const allService=[
-        {
-            status:'pending',
-            name:'Sufi Ahamed Hamim',
-            email:'sufi@gmail.com',
-            serviceTitle:'Graphics',
-            projectDetails:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-        },
-        {
-            status:'pending',
-            name:'Sufi Ahamed Hamim',
-            email:'sufi@gmail.com',
-            serviceTitle:'Graphics',
-            projectDetails:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-        },
-        {
-            status:'pending',
-            name:'Sufi Ahamed Hamim',
-            email:'sufi@gmail.com',
-            serviceTitle:'Graphics',
-            projectDetails:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
-        }
-    ]
 
     useEffect(() => {
         fetch('https://powerful-castle-90702.herokuapp.com/allOrder')
