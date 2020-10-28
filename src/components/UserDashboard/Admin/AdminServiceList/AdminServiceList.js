@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
-import Sidebar from '../../Sidebar/Sidebar';
 import AdminServiceListDetails from '../AdminServiceListDetails/AdminServiceListDetails';
 
 const AdminServiceList = () => {
     const [allOrder, setAllOrder] = useState([])
-
-    // console.log(allOrder);
 
     useEffect(() => {
         fetch('https://powerful-castle-90702.herokuapp.com/allOrder')
@@ -35,7 +32,7 @@ const AdminServiceList = () => {
                                 <tbody>
                                     {
                                         allOrder.map(service=>{
-                                            return <AdminServiceListDetails service={service}></AdminServiceListDetails>
+                                            return <AdminServiceListDetails key={service._id} service={service}></AdminServiceListDetails>
                                         })
                                     }
                                 </tbody>

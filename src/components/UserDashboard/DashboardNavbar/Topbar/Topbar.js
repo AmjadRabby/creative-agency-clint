@@ -10,8 +10,16 @@ const Topbar = () => {
     servicesCard,
     setServicesCard,
   ] = useContext(UserContext);
+  
   return (
     <div className="d-flex justify-content-between py-3 px-4 fixed">
+      {
+       ( window.location.pathname == '/dashboard/order' ||  window.location.pathname == '/review') ? 
+        <h4>Login Here</h4> 
+      
+      :
+
+      
       <Link to="/">
         {" "}
         <img
@@ -20,12 +28,18 @@ const Topbar = () => {
           src={agencyLogo}
           alt=""
         />
-      </Link>
-      <h3 className="mr-auto ml-5">
+    </Link>  
+
+      }
+      
+      <h3 className="mr-auto ml-5 pl-3">
         {" "}
         {googleSignIn.admin ? "Admin" : "Order"}
       </h3>
-      <h5>{googleSignIn.name}</h5>
+
+      <img  style={{width: '40px', borderRadius: '50px'}} src={googleSignIn.image} alt=""/>
+
+      <h5 className="p-2 pt-2">{googleSignIn.name}</h5>
     </div>
   );
 };

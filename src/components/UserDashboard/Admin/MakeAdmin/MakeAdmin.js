@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import Topbar from '../../DashboardNavbar/Topbar/Topbar';
 import Sidebar from '../../Sidebar/Sidebar';
 
 const MakeAdmin = () => {
@@ -32,6 +33,7 @@ const MakeAdmin = () => {
     }
     return (
         <div>
+            <Topbar/>
             <Row xs={12}>
                 <Col md={2}>
                     <Sidebar></Sidebar>

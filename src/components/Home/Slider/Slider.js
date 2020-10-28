@@ -42,7 +42,7 @@ const Slider = () => {
                     {
                         allCarousel.map(carousel => {
                             return(
-                                <div>
+                                <div key={carousel}>
                                     <img className='carousel-image' src={carousel} alt=""/>
                                 </div>
                             )

@@ -38,7 +38,8 @@ const Dashboard = () => {
             <div className="col-md-9 bg-light">
                 {
                 googleSignIn.admin? <AdminServiceList/> :  <Order id={id} />
-                }                
+                }  
+                              
             </div>            
         </div>
         </div>

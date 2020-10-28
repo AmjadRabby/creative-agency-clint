@@ -34,9 +34,13 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
+          <PrivateRoute path="/dashboard">
+            <Dashboard />
+          </PrivateRoute>
           <PrivateRoute path="/dashboard/:id">
             <Dashboard />
           </PrivateRoute>
+          
           <PrivateRoute path="/service-list">
             <ServiceList></ServiceList>
           </PrivateRoute>

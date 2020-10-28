@@ -29,6 +29,10 @@ const Sidebar = () => {
       .then((data) => setIsAdmin(data));
   }, []);
 
+  // const sidebarColor {
+  //   color: `${window.location.pathname=='/dashboard/order' ? '#009444' : 'black'}`
+  // }
+
   return (
     <div
       className="sidebar d-flex flex-column justify-content-between py-5 px-4"
@@ -56,9 +60,9 @@ const Sidebar = () => {
           </div>
         ) : (
           <div>
-            <li>
+            <li  >
               <Link to="/dashboard/order" className="text-dark">
-                <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
+                <FontAwesomeIcon icon={faShoppingCart}  /> <span style={{color:`${window.location.pathname=='/dashboard/order' ? '#009444' : 'black'}`}}> Order</span>
               </Link>
             </li>
             <li>

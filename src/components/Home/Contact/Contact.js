@@ -17,7 +17,7 @@ const Contact = () => {
                             <input type="text" className="form-control p-4 " placeholder="Your name / company name"/>
                         </div>
                         <div className="form-group message-area">
-                            <textarea type="text" className="form-control  " style={{height: "150px"}} placeholder="Your message" />  
+                            <textarea type="text" className="form-control amjad " style={{height: "150px"}} placeholder="Your message" />  
                         </div>
                             <button type="submit" className="btn btn-dark">Send</button>
                     </form>
