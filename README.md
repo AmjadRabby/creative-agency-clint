@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Creative Agency
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Resume](https://drive.google.com/file/d/1y4j9H3pLXZwVTHOA2CTcPZTfeWGCjiUp/view?usp=sharing).
 
 ## Available Scripts
 
