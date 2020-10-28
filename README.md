@@ -14,8 +14,6 @@ A customer can order for a service which is saved in a database.
 Admin  Add service, make admin , show all order service.
 Users  make Order, review, own order list.
 
-<br/>
-
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
